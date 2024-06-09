@@ -1,0 +1,45 @@
+.footer {
+  position: fixed;
+  bottom: 10px;
+  width: 100%;
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.6);
+  text-align: center;
+}
+
+.footer a {
+  color: rgba(255, 255, 255, 0.6);
+  transition: all 0.2s linear;
+}
+
+.footer a:hover {
+  color: rgba(255, 255, 255, 1);
+}
+
+.sep {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.sep::after {
+  content: ' 丨 ';
+}
+
+.links {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.6);
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+.links:hover {
+  color: #fff;
+}
+
+.footer .footer_hide {
+  display: none;
+}
+@media (max-width: 750px) {
+  .footer span {
+    display: none;
+  }
+}

@@ -1,0 +1,7 @@
+.idea
+# config.yaml
+models/*.pb.go
+/logs/*
+# 不忽略单个文件
+!/logs/logger.go
+/utils/*_templ.go

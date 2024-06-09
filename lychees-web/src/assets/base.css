@@ -1,0 +1,36 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-tap-highlight-color: transparent;
+  user-select: none;
+}
+ul {
+  list-style-type: none;
+}
+
+html.gray {
+  -webkit-filter: grayscale(1);
+  filter: grayscale(1);
+}
+
+a {
+  text-decoration: none;
+}
+.el-autocomplete,
+.el-cascader,
+.el-date-editor.el-input {
+  --el-date-editor-width: 100%;
+  width: 100%;
+}
+
+.el-dialog {
+  border-radius: 13px !important;
+  max-width: 500px !important;
+  min-width: 350px !important;
+}
+.el-popper {
+  border-radius: 10px !important;
+}
+.el-divider--horizontal {
+  margin: 3px !important;
+}

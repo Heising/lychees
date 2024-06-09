@@ -1,0 +1,49 @@
+package utils
+// 生成命令 templ generate
+templ verifyEmail(nickName string,code string) {
+    <!DOCTYPE html>
+    <html lang="zh-Hans" xmlns="http://www.w3.org/1999/xhtml" xmlns:o="urn:schemas-microsoft-com:office:office">
+    <head>
+    <title></title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--[if mso]>
+    <noscript>
+    <xml>
+    <o:OfficeDocumentSettings>
+    <o:PixelsPerInch>96</o:PixelsPerInch>
+    </o:OfficeDocumentSettings>
+    </xml>
+    </noscript>
+    <![endif]-->
+    </head>
+    <body style="margin:0;padding:0;min-width:100%;background-color:#ffffff;">
+    <p style="text-align: center;font-size: 32px;">
+            <span style="text-wrap: nowrap;">{nickName}，您好！</span><br/>
+        </p>
+        <p style="text-align: center;font-size: 18px;">
+            <span style="text-wrap: nowrap;">正在进行邮箱验证操作，验证码为:</span>
+        </p>
+        <p style="padding: 16px;
+            text-align: center;
+            background: #c8eae4;
+            border-radius: 4px;
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 140%;
+            color: #9373ee;
+            margin: 24px 0;">
+            <span style="color: #01aebc;
+          font-size: 24px;
+          font-weight: 600;
+          text-align: center;
+          text-wrap: wrap;
+        border-bottom: 1px dashed #ccc;">{code}</span>
+        </p>
+        <p style="text-align:center; margin-top: 24px; margin-bottom: 40px;">
+            <span style="display: inline-block; color: rgba(25, 25, 25, 0.5); font-size: 14px; line-height: 20px;">验证码 10 分钟内有效</span><br/><span
+                style="display: inline-block; margin-top: 8px; color: rgba(25, 25, 25, 0.5); font-size: 14px; line-height: 20px;">请勿交给不信任的人，将导致账号被盗和个人信息泄漏</span>
+        </p>
+    </body>
+    </html>
+}

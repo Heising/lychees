@@ -1,0 +1,36 @@
+.menu {
+  display: none;
+  opacity: 0;
+  overflow: hidden;
+  transform: scale(0.5);
+  position: absolute;
+  // 需要比气泡提示低 2012
+  z-index: 2000;
+
+  min-width: 130px;
+  background-color: var(--heising-color);
+  border-radius: 10px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.25);
+  transform-origin: top left;
+  transition: 0.3s cubic-bezier(0.31, -0.1, 0.43, 1.59);
+
+  .menuItem {
+    padding: 10px 15px;
+    // margin-top: 8px;
+
+    // border-radius: 5px;
+    color: black;
+    font-size: 12px;
+    transition: 0.3s;
+
+    &:hover {
+      color: #333;
+
+      background-color: rgba(0, 0, 0, 0.1);
+    }
+    &.warn:hover {
+      color: #ffb302;
+      background-color: rgba(255, 179, 2, 0.1);
+    }
+  }
+}

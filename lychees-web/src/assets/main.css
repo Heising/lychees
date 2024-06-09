@@ -1,0 +1,32 @@
+@import './base.css';
+
+:root {
+  --theme-color-heising: #01aebc;
+  --theme-color-grey: #6d6e70;
+  --heising-background-color: rgb(200, 200, 200);
+  --heising-color: rgb(233, 233, 233);
+  --pink: #f9c0bf;
+  --cyan: #c8eae4;
+  --dark: #a3aebc;
+}
+@media (prefers-color-scheme: dark) {
+  body {
+    --heising-background-color: var(--dark);
+    --heising-color: var(--dark);
+  }
+}
+.icon {
+  width: 1em;
+  height: 1em;
+  vertical-align: -0.15em;
+  fill: currentColor;
+  overflow: hidden;
+}
+.heisingfont {
+  font-size: 18px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: 0.25s;
+}
