@@ -1,4 +1,8 @@
-<img src="lychees-web\public\lychees.svg" alt="lychees" width="360" />
+<p align="center">
+  <a href="https://redli.cn" target="_blank" rel="noopener noreferrer">
+    <img width="360" src="lychees-web\public\lychees.svg" alt="Pinia logo">
+  </a>
+</p>
 
 ## 这是一个支持导入第三方 svg 的书签页全栈项目
 
