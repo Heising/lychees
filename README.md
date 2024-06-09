@@ -14,7 +14,7 @@
 
 通过 svg 的可以鼠标悬停切换logo中间的白色变为黑色 个性化你的标签页
 
-<img src="assets\b9beae3986bf781abe93c5c78e6a3516.png" alt="b9beae3986bf781abe93c5c78e6a3516" />![屏幕截图 2024-06-09 223537](D:\root\lychees\assets\屏幕截图 2024-06-09 223537.png)
+<img src="assets\b9beae3986bf781abe93c5c78e6a3516.png" alt="b9beae3986bf781abe93c5c78e6a3516" />![屏幕截图 2024-06-09 223537](assets\屏幕截图 2024-06-09 223537.png)
 
 
 
