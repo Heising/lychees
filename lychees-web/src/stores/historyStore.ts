@@ -7,11 +7,10 @@ export const useSearchHistory = defineStore(
     const searchHistoryArray = ref<string[]>([])
 
     const add = (keyword: string) => {
-      searchHistoryArray.value.unshift(keyword)
-      searchHistoryArray.value = [...new Set(searchHistoryArray.value)]
-      if (searchHistoryArray.value.length > 10) {
-        searchHistoryArray.value.pop()
-      }
+      searchHistoryArray.value = [
+        keyword,
+        ...searchHistoryArray.value.filter((item) => item !== keyword).slice(0, 9),
+      ]
     }
 
     const clean = () => {

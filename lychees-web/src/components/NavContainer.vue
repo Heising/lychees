@@ -819,7 +819,9 @@ function decodeHtml(html: string) {
       height: 100%;
       text-align: center;
       border-radius: var(--icon-radius);
-      transition: all 0.2s linear;
+      transition:
+        transform 0.2s linear,
+        background-color 0.4s linear;
 
       .heisingfont {
         color: var(--item-color);
