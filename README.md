@@ -4,7 +4,7 @@
   </a>
 </p>
 
-## 这是一个支持导入第三方 svg 的书签页全栈项目
+## 这是一个支持导入第三方 svg 的书签页全栈 vue+react+golang 项目
 
 <img src="assets\wallpaper-1717944582372.png" alt="wallpaper-1717944582372" style="width:50%;" /><img src="assets\wallpaper-1717945222743.png" alt="wallpaper-1717945222743"   style="width:50%;" />
 
