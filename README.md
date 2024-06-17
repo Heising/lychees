@@ -18,7 +18,10 @@
 
 
 
-示例 svg  多色 svg 把需要控制变色的路径不要移除fill属性 通过css控制变色
+单色 svg，直接可以使用阿里字库移除颜色
+多色 svg 把需要控制变色的路径移除 fill 属性 通过 css 控制变色
+
+#### 示例 svg 代码
 
 ```xml
 <svg t="1717943897408" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1872"
