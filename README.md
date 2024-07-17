@@ -6,15 +6,15 @@
 
 ## 这是一个支持导入第三方 svg 的书签页全栈 vue+react+golang 项目
 
-<img src="assets\wallpaper-1717944582372.png" alt="wallpaper-1717944582372" style="width:50%;" /><img src="assets\wallpaper-1717945222743.png" alt="wallpaper-1717945222743" style="width:50%;" />
-<img src="assets\wallpaper-1718013538829.png" alt="wallpaper-1718013538829" style="width:50%;" /><img src="assets\wallpaper-1718013611445.png" alt="wallpaper-1718013611445" style="width:50%;" />
-<img src="assets\191938.png" alt="191938" />
+<img src="assets\wallpaper-1717944582372.jpg" alt="wallpaper-1717944582372" style="width:50%;" /><img src="assets\wallpaper-1717945222743.jpg" alt="wallpaper-1717945222743" style="width:50%;" />
+<img src="assets\wallpaper-1718013538829.jpg" alt="wallpaper-1718013538829" style="width:50%;" /><img src="assets\wallpaper-1718013611445.jpg" alt="wallpaper-1718013611445" style="width:50%;" />
+<img src="assets\191938.jpg" alt="191938" />
 
 
 
 通过 svg 的可以鼠标悬停切换logo中间的白色变为黑色 个性化你的标签页
 
-<img src="assets\b9beae3986bf781abe93c5c78e6a3516.png" alt="b9beae3986bf781abe93c5c78e6a3516" /><img src="assets\屏幕截图 2024-06-09 223537.png" alt="屏幕截图 2024-06-09 223537" />
+<img src="assets\b9beae3986bf781abe93c5c78e6a3516.png" alt="b9beae3986bf781abe93c5c78e6a3516" /><img src="assets\屏幕截图 2024-06-09 223537.jpg" alt="屏幕截图 2024-06-09 223537" />
 
 
 

@@ -165,16 +165,17 @@
             <el-button type="success" plain>上传壁纸</el-button>
           </el-upload>
           <div>
-            <el-button type="warning" @click="toggleCover" plain>
-              {{ navStore.isMask ? '关闭' : '启用' }}遮罩
-            </el-button>
+            
           </div>
         </div>
       </div>
 
       <template #footer>
         <div class="dialog-footer">
-          <el-button @click="updateWallpaperVisible = false">取消操作</el-button>
+          <el-button type="warning" @click="toggleCover" plain>
+              {{ navStore.isMask ? '关闭' : '启用' }}遮罩
+            </el-button>
+          <!-- <el-button @click="updateWallpaperVisible = false">取消操作</el-button> -->
           <el-button type="primary" @click="updateWallpaper">确认更换</el-button>
         </div>
       </template>
