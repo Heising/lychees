@@ -42,14 +42,9 @@ const PasswordResetForm = () => {
 
   const [disabled, setDisabled] = useState(false)
   const setPindisabled = useStore((state) => state.setPindisabled)
-  // 更新图片
-  const updateImageSrc = useStore((state) => state.updateImageSrc)
 
-  const captchaId = useStore((state) => state.captchaId)
-  const setCaptchaId = useStore((state) => state.setCaptchaId)
-
-  const captchaTimestamp = useStore((state) => state.captchaTimestamp)
-  const setCaptchaTimestamp = useStore((state) => state.setCaptchaTimestamp)
+  const { updateImageSrc, captchaId, setCaptchaId, captchaTimestamp, setCaptchaTimestamp } =
+    useStore()
 
   const [visibleCaptcha, setVisibleCaptcha] = useState(false)
   const [visibleEmail, setVisibleEmail] = useState(false)
@@ -127,7 +122,6 @@ const PasswordResetForm = () => {
       .catch((err) => {
         if (err.response.data.error === '验证码错误！') {
           refreshCaptcha()
-
         } else if (err.response.data.error === '用户不存在') {
           form.resetField('email')
 
@@ -183,7 +177,6 @@ const PasswordResetForm = () => {
   // 开始重置密码
   const passwordReset = async (account: z.infer<typeof formSchema>, verifyCode: string) => {
     const email = account.email
-
 
     const encryptor = new JSEncrypt() // 新建JSEncrypt对象
     encryptor.setPublicKey(pubKey.publicKey) // 设置公钥

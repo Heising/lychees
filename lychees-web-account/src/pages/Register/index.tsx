@@ -62,10 +62,7 @@ const RegisterForm = () => {
       path: ['confirm'], // path of error
     })
   // 更新图片
-  const updateImageSrc = useStore((state) => state.updateImageSrc)
-  const captchaTimestamp = useStore((state) => state.captchaTimestamp)
-  const setCaptchaTimestamp = useStore((state) => state.setCaptchaTimestamp)
-  const setCaptchaId = useStore((state) => state.setCaptchaId)
+  const { updateImageSrc, setCaptchaId, captchaTimestamp, setCaptchaTimestamp } = useStore()
   // 设置图片验证码表单组件打开
   const [visibleCaptcha, setVisibleCaptcha] = useState(false)
   // 设置邮箱验证码表单组件打开
@@ -168,7 +165,6 @@ const RegisterForm = () => {
       })
   }
 
- 
   // 验证码表单
   const formCaptchaPin = useForm<z.infer<typeof formSchemaPin>>({
     resolver: zodResolver(formSchemaPin),
@@ -215,7 +211,6 @@ const RegisterForm = () => {
     const iconfontLink = account.iconfontLink
     const birthday = account.birthday
 
-
     const encryptor = new JSEncrypt() // 新建JSEncrypt对象
     encryptor.setPublicKey(pubKey.publicKey) // 设置公钥
     const encrypted = encryptor.encrypt(pubKey.nanoid + account.password)
@@ -231,8 +226,6 @@ const RegisterForm = () => {
         .catch(() => {
           setVisibleEmail(true)
           formEmailPin.reset()
-
-         
         })
     } else {
       toastError('密码加密失败，请重试')

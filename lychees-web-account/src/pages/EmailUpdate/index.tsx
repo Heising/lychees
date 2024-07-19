@@ -40,12 +40,9 @@ const EmailUpdateForm = () => {
       // path: ['confirm']是一个用于指示错误路径的部分
       path: ['newEmail'], // path of error
     })
-  // const [disabled, setDisabled] = useState(false)
-  // 更新图片
-  const updateImageSrc = useStore((state) => state.updateImageSrc)
-  const captchaTimestamp = useStore((state) => state.captchaTimestamp)
-  const setCaptchaTimestamp = useStore((state) => state.setCaptchaTimestamp)
-  const setCaptchaId = useStore((state) => state.setCaptchaId)
+
+  const { updateImageSrc, setCaptchaId, captchaTimestamp, setCaptchaTimestamp } = useStore()
+
   // 设置图片验证码表单组件打开
   const [visibleCaptcha, setVisibleCaptcha] = useState(false)
   // const [imageSrc, setImageSrc] = useState(refresh)
@@ -124,7 +121,7 @@ const EmailUpdateForm = () => {
       })
       .catch((err) => {
         // formCaptchaPin.reset()
-        
+
         if (err.response == undefined || err.response.status >= 500) {
           return Promise.reject(err)
         }
@@ -188,7 +185,6 @@ const EmailUpdateForm = () => {
     const email = account.email
     const newEmail = account.newEmail
 
-
     const encryptor = new JSEncrypt() // 新建JSEncrypt对象
     encryptor.setPublicKey(pubKey.publicKey) // 设置公钥
     const encrypted = encryptor.encrypt(pubKey.nanoid + account.password)
@@ -204,8 +200,6 @@ const EmailUpdateForm = () => {
         .catch(() => {
           setVisibleEmail(true)
           formEmailPin.reset()
-
-          
         })
     } else {
       toastError('密码加密失败，请重试')
