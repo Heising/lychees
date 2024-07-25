@@ -7,13 +7,6 @@
 ## 这是一个支持导入第三方 svg 的书签页全栈项目
 前端vue（主页面）react（账号管理）+golang
 
-里面有一种方案解决jwt无状态问题，同时保持 jwt 多服务器通行，比如解决多设备下线问题
-
-多种并发 map 加锁 play 🔞 示例
-
-Redis，MongoDB，pgsql示例
-
-一个成熟的浏览器应该自己动，会自己判断有没有jwt过期，别等401再请求刷新，浪费服务器资源
 
 <img src="assets\wallpaper-1717944582372.jpg" alt="wallpaper-1717944582372" style="width:50%;" /><img src="assets\wallpaper-1717945222743.jpg" alt="wallpaper-1717945222743" style="width:50%;" />
 <img src="assets\wallpaper-1718013538829.jpg" alt="wallpaper-1718013538829" style="width:50%;" /><img src="assets\wallpaper-1718013611445.jpg" alt="wallpaper-1718013611445" style="width:50%;" />
