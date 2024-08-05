@@ -62,16 +62,17 @@ httpInstance.interceptors.request.use(
         // jwt已经过期则靠token刷新jwt
         isRefreshing = true
         Refreshing = httpInstance.get('/refresh')
-        await Refreshing
-
-        isRefreshing = false
+        await Refreshing.finally(() => {
+          isRefreshing = false
+        })
       } else if (payload.exp - unix() < 2 * 60 * 60) {
         // 两小时刷新
         // 快过期则靠jwt刷新
         isRefreshing = true
         Refreshing = httpInstance.get('/refreshjwt')
-        await Refreshing
-        isRefreshing = false
+        await Refreshing.finally(() => {
+          isRefreshing = false
+        })
       }
 
       // 如果访问需有鉴权的路径
